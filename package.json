@@ -1,5 +1,5 @@
 {
-  "name": "@lionel42/red-contrib-feedparser-simple",
+  "name": "node-red-contrib-feedparser-simple",
   "version": "0.0.1",
   "description": "A Node-RED node to get RSS Atom feeds. Get URL from input payload. Returns all elements of feed as single messages",
   "dependencies": {
