@@ -41,11 +41,12 @@ module.exports = function(RED) {
                 var stream = this, article;
                 while (article = stream.read()) {
                     // send articles, one article, one message
-                    msg.topic = article.origlink || article.link
-                    msg.payload = article.description
-                    msg.article = article
+                    let rmsg = { ...msg };
+                    rmsg.topic = article.origlink || article.link
+                    rmsg.payload = article.description
+                    rmsg.article = article
                                 
-                    node.send(msg);                    
+                    node.send(rmsg);                    
                 }
             });
 
