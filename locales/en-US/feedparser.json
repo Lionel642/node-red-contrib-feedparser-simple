@@ -1,0 +1,8 @@
+{
+    "feedparser-simple": {
+        "feedparser-simple": "feedparser-simple",
+        "errors": {
+            "badstatuscode": "error - Bad status code"
+        }
+    }
+}
